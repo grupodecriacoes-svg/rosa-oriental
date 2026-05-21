@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Política de Privacidade — Rosa Oriental</title>
+<meta name="description" content="Política de Privacidade da Rosa Oriental conforme a LGPD - Lei Geral de Proteção de Dados.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌸</text></svg>">
+<meta name="theme-color" content="#5a1a2b">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600;700&family=Shippori+Mincho:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --rose-50:#fdf2f4;
+    --rose-100:#f9e2e6;
+    --rose-200:#f1c4cc;
+    --rose-300:#e89aa9;
+    --rose-400:#d96b81;
+    --rose-500:#c44a64;
+    --wine:#5a1a2b;
+    --wine-deep:#3d0f1d;
+    --cream:#faf6f1;
+    --cream-warm:#f3ebe0;
+    --gold:#b8895a;
+    --ink:#1a0a10;
+    --font-display:'Cormorant Garamond', serif;
+    --font-body:'Inter', sans-serif;
+    --font-jp:'Shippori Mincho', serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{overflow-x:hidden}
+  body{
+    font-family:var(--font-body);
+    background:var(--cream);
+    color:var(--ink);
+    line-height:1.7;
+    font-weight:400;
+  }
+
+  /* HEADER */
+  .topbar{
+    background:var(--wine-deep);
+    color:var(--rose-100);
+    text-align:center;
+    padding:10px 20px;
+    font-size:11px;
+    letter-spacing:3px;
+    text-transform:uppercase;
+  }
+
+  .header{
+    background:linear-gradient(135deg, var(--wine-deep), var(--wine));
+    color:var(--cream);
+    padding:40px 20px 50px;
+    text-align:center;
+    position:relative;
+    overflow:hidden;
+  }
+  .header::before{
+    content:'桜';
+    position:absolute;
+    font-family:var(--font-display);
+    font-size:280px;
+    color:rgba(232,154,169,.06);
+    top:-60px;right:-40px;
+    line-height:1;
+  }
+  .header-content{
+    position:relative;
+    z-index:2;
+    max-width:780px;
+    margin:0 auto;
+  }
+  .logo{
+    font-family:var(--font-display);
+    font-size:28px;
+    font-weight:600;
+    letter-spacing:6px;
+    margin-bottom:8px;
+  }
+  .logo small{
+    display:block;
+    font-family:var(--font-jp);
+    font-size:11px;
+    color:var(--rose-300);
+    letter-spacing:8px;
+    margin-top:6px;
+  }
+  .header h1{
+    font-family:var(--font-display);
+    font-size:clamp(36px, 6vw, 50px);
+    font-weight:500;
+    margin-top:30px;
+    line-height:1.1;
+  }
+  .header h1 em{
+    font-style:italic;
+    color:var(--rose-300);
+  }
+  .header .subtitle{
+    color:var(--rose-200);
+    font-size:14px;
+    margin-top:14px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+  }
+
+  /* CONTENT */
+  .content{
+    max-width:780px;
+    margin:0 auto;
+    padding:50px 24px 60px;
+  }
+  .last-updated{
+    background:var(--rose-50);
+    border-left:4px solid var(--rose-500);
+    padding:14px 20px;
+    border-radius:0 8px 8px 0;
+    margin-bottom:40px;
+    font-size:13px;
+    color:var(--wine);
+  }
+  .last-updated strong{color:var(--wine-deep)}
+
+  h2{
+    font-family:var(--font-display);
+    font-size:28px;
+    color:var(--wine-deep);
+    font-weight:600;
+    margin:38px 0 14px;
+    line-height:1.2;
+  }
+  h2 .num{
+    color:var(--rose-500);
+    font-style:italic;
+    margin-right:8px;
+  }
+  h3{
+    font-family:var(--font-body);
+    font-size:16px;
+    color:var(--wine);
+    font-weight:600;
+    margin:24px 0 10px;
+    letter-spacing:.3px;
+  }
+  p{
+    margin-bottom:14px;
+    color:#3a2530;
+    font-size:15px;
+  }
+  ul{
+    margin:14px 0 18px 24px;
+  }
+  ul li{
+    margin-bottom:8px;
+    color:#3a2530;
+    font-size:15px;
+    padding-left:6px;
+  }
+  ul li::marker{color:var(--rose-500)}
+  strong{color:var(--wine-deep);font-weight:600}
+
+  .info-box{
+    background:var(--cream-warm);
+    border:1px solid var(--rose-200);
+    border-radius:10px;
+    padding:20px 24px;
+    margin:20px 0;
+  }
+  .info-box p:last-child{margin-bottom:0}
+
+  .contact-card{
+    background:linear-gradient(135deg, var(--wine), var(--wine-deep));
+    color:var(--cream);
+    border-radius:12px;
+    padding:28px;
+    margin-top:40px;
+    text-align:center;
+  }
+  .contact-card h3{
+    font-family:var(--font-display);
+    font-size:24px;
+    color:var(--rose-300);
+    margin-bottom:12px;
+  }
+  .contact-card p{color:var(--rose-100);margin-bottom:6px}
+  .contact-card a{
+    color:var(--rose-300);
+    text-decoration:none;
+    font-weight:600;
+  }
+
+  /* FOOTER */
+  footer{
+    background:var(--wine-deep);
+    color:var(--rose-200);
+    text-align:center;
+    padding:30px 20px;
+    font-size:12px;
+  }
+  footer a{
+    color:var(--rose-300);
+    text-decoration:none;
+    margin:0 10px;
+    letter-spacing:1px;
+  }
+  footer a:hover{color:var(--cream)}
+  .back-link{
+    display:inline-block;
+    margin-top:20px;
+    color:var(--wine);
+    text-decoration:none;
+    font-size:13px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    font-weight:600;
+    border:2px solid var(--wine);
+    padding:10px 24px;
+    border-radius:999px;
+    transition:all .25s;
+  }
+  .back-link:hover{
+    background:var(--wine);
+    color:var(--cream);
+  }
+
+  /* Placeholders editáveis */
+  .placeholder{
+    background:#fff3cd;
+    color:#856404;
+    padding:2px 6px;
+    border-radius:3px;
+    font-size:13px;
+    font-weight:500;
+    border:1px dashed #f0c14b;
+  }
+
+  @media (max-width:600px){
+    .header{padding:30px 16px 40px}
+    .content{padding:40px 16px 50px}
+    h2{font-size:24px;margin:32px 0 12px}
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  ✦ Site oficial Rosa Oriental ✦
+</div>
+
+<header class="header">
+  <div class="header-content">
+    <div class="logo">
+      ROSA ORIENTAL
+      <small>美 · 桜 · 美</small>
+    </div>
+    <h1>Política de <em>Privacidade</em></h1>
+    <div class="subtitle">Conforme LGPD — Lei nº 13.709/2018</div>
+  </div>
+</header>
+
+<main class="content">
+
+  <div class="last-updated">
+    <strong>Última atualização:</strong> 21 de maio de 2026<br>
+    Esta Política está em conformidade com a Lei Geral de Proteção de Dados (LGPD).
+  </div>
+
+  <p>A Rosa Oriental valoriza a privacidade e a segurança das informações de seus clientes e visitantes. Esta Política de Privacidade explica de forma clara como coletamos, utilizamos, armazenamos e protegemos seus dados pessoais quando você acessa nosso site <strong>meurosaoriental.com.br</strong> ou realiza compras conosco.</p>
+
+  <p>Ao utilizar nosso site, você concorda com as práticas descritas abaixo. Leia com atenção.</p>
+
+  <h2><span class="num">1.</span>Quem somos</h2>
+
+  <div class="info-box">
+    <p><strong>Razão Social:</strong> Smart Caps Log LTDA</p>
+    <p><strong>CNPJ:</strong> 54.346.949/0001-77</p>
+    <p><strong>Endereço:</strong> R. Eng. Pegado, 1134 — Bairro Vila Carrão, São Paulo - SP</p>
+    <p><strong>E-mail de contato:</strong> contato@meurosaoriental.com.br</p>
+    <p><strong>WhatsApp:</strong> (14) 99658-2695</p>
+  </div>
+
+  <p>Somos o controlador dos dados pessoais coletados através do site Rosa Oriental, responsável pelas decisões sobre o tratamento das informações conforme a LGPD.</p>
+
+  <h2><span class="num">2.</span>Dados que coletamos</h2>
+
+  <h3>2.1 Dados fornecidos diretamente por você</h3>
+  <p>Coletamos as informações que você nos fornece voluntariamente, como:</p>
+  <ul>
+    <li>Nome completo</li>
+    <li>CPF (necessário para emissão de nota fiscal)</li>
+    <li>E-mail</li>
+    <li>Telefone / WhatsApp</li>
+    <li>Endereço de entrega completo</li>
+    <li>Dados de pagamento (processados pela plataforma Braip — não armazenamos cartões em nossos servidores)</li>
+  </ul>
+
+  <h3>2.2 Dados coletados automaticamente</h3>
+  <p>Quando você navega em nosso site, coletamos automaticamente:</p>
+  <ul>
+    <li>Endereço IP e tipo de dispositivo</li>
+    <li>Navegador e sistema operacional</li>
+    <li>Páginas visitadas e tempo de navegação</li>
+    <li>Origem de acesso (de onde veio até nós)</li>
+    <li>Cookies e tecnologias similares</li>
+  </ul>
+
+  <h2><span class="num">3.</span>Como usamos seus dados</h2>
+
+  <p>Suas informações são utilizadas para as seguintes finalidades:</p>
+  <ul>
+    <li><strong>Processar pedidos:</strong> confirmar compras, emitir notas fiscais, enviar produtos.</li>
+    <li><strong>Atendimento:</strong> responder dúvidas via WhatsApp, e-mail ou chat.</li>
+    <li><strong>Comunicação:</strong> enviar atualizações sobre seu pedido, ofertas e novidades (se autorizado).</li>
+    <li><strong>Melhorias no site:</strong> entender como nossos clientes navegam para otimizar a experiência.</li>
+    <li><strong>Segurança:</strong> prevenir fraudes e proteger nossos clientes.</li>
+    <li><strong>Obrigações legais:</strong> cumprir exigências fiscais e regulatórias.</li>
+  </ul>
+
+  <h2><span class="num">4.</span>Compartilhamento de dados</h2>
+
+  <p>Não vendemos nem alugamos seus dados a terceiros. Compartilhamos suas informações apenas com:</p>
+
+  <ul>
+    <li><strong>Braip (plataforma de pagamento):</strong> para processar transações de forma segura.</li>
+    <li><strong>Transportadoras:</strong> para entrega dos produtos.</li>
+    <li><strong>Autoridades públicas:</strong> quando exigido por lei ou ordem judicial.</li>
+    <li><strong>Provedores de tecnologia:</strong> como Vercel (hospedagem) e Meta/Google (análise e marketing), com base em legítimo interesse ou seu consentimento.</li>
+  </ul>
+
+  <h2><span class="num">5.</span>Cookies e tecnologias similares</h2>
+
+  <p>Utilizamos cookies para melhorar sua experiência. São pequenos arquivos armazenados no seu dispositivo que nos permitem:</p>
+  <ul>
+    <li>Lembrar suas preferências</li>
+    <li>Analisar tráfego do site</li>
+    <li>Personalizar conteúdo e ofertas</li>
+    <li>Medir eficácia de campanhas de marketing</li>
+  </ul>
+
+  <p>Você pode desativar cookies nas configurações do seu navegador, mas algumas funcionalidades do site podem ser afetadas.</p>
+
+  <h2><span class="num">6.</span>Seus direitos como titular dos dados</h2>
+
+  <p>Conforme a LGPD, você tem direito a:</p>
+  <ul>
+    <li><strong>Confirmação:</strong> saber se tratamos seus dados.</li>
+    <li><strong>Acesso:</strong> obter cópia dos dados que mantemos sobre você.</li>
+    <li><strong>Correção:</strong> atualizar dados incompletos ou desatualizados.</li>
+    <li><strong>Anonimização ou exclusão:</strong> solicitar a remoção de dados desnecessários ou tratados em desconformidade com a lei.</li>
+    <li><strong>Portabilidade:</strong> solicitar a transferência dos dados para outro fornecedor.</li>
+    <li><strong>Revogação do consentimento:</strong> retirar autorização para uso dos dados a qualquer momento.</li>
+    <li><strong>Informação sobre compartilhamento:</strong> saber com quem compartilhamos suas informações.</li>
+  </ul>
+
+  <p>Para exercer qualquer direito, entre em contato pelo e-mail contato@meurosaoriental.com.br ou WhatsApp <strong>(14) 99658-2695</strong>.</p>
+
+  <h2><span class="num">7.</span>Segurança das informações</h2>
+
+  <p>Adotamos medidas técnicas e administrativas para proteger seus dados contra acesso não autorizado, perda, alteração ou divulgação indevida:</p>
+  <ul>
+    <li>Conexão criptografada (HTTPS) em todo o site</li>
+    <li>Pagamentos processados em ambiente seguro pela Braip</li>
+    <li>Hospedagem em servidores com alto padrão de segurança (Vercel)</li>
+    <li>Acesso restrito a dados pessoais apenas para colaboradores autorizados</li>
+  </ul>
+
+  <p>Apesar dos nossos esforços, nenhum sistema é 100% seguro. Em caso de incidente envolvendo seus dados, comunicaremos você e a Autoridade Nacional de Proteção de Dados (ANPD) conforme exigido pela lei.</p>
+
+  <h2><span class="num">8.</span>Por quanto tempo guardamos seus dados</h2>
+
+  <p>Mantemos suas informações pelo tempo necessário para cumprir as finalidades descritas nesta política e atender obrigações legais:</p>
+  <ul>
+    <li><strong>Dados de pedido:</strong> 5 anos (exigência fiscal)</li>
+    <li><strong>Dados de marketing:</strong> até que você revogue o consentimento</li>
+    <li><strong>Cookies:</strong> conforme prazo definido em cada cookie</li>
+  </ul>
+
+  <h2><span class="num">9.</span>Crianças e adolescentes</h2>
+
+  <p>Nossos produtos são destinados a adultos. Não coletamos intencionalmente dados de menores de 18 anos. Caso identifiquemos que coletamos dados de menor sem autorização do responsável, removeremos imediatamente.</p>
+
+  <h2><span class="num">10.</span>Alterações nesta política</h2>
+
+  <p>Esta política pode ser atualizada periodicamente. Mudanças significativas serão informadas no nosso site ou por e-mail. A data da última atualização sempre estará no topo deste documento.</p>
+
+  <div class="contact-card">
+    <h3>Dúvidas sobre seus dados?</h3>
+    <p>Entre em contato com nosso encarregado de proteção de dados:</p>
+    <p><strong>E-mail:</strong> contato@meurosaoriental.com.br</p>
+    <p><strong>WhatsApp:</strong> <a href="https://wa.me/5514996582695">(14) 99658-2695</a></p>
+  </div>
+
+  <div style="text-align:center;margin-top:40px">
+    <a href="index.html" class="back-link">← Voltar ao site</a>
+  </div>
+
+</main>
+
+<footer>
+  <div>
+    <a href="index.html">Início</a> ·
+    <a href="privacidade.html">Privacidade</a> ·
+    <a href="termos.html">Termos de Uso</a>
+  </div>
+  <div style="margin-top:14px;opacity:.7">
+    © 2026 ROSA ORIENTAL · Todos os direitos reservados
+  </div>
+</footer>
+
+</body>
+</html>
